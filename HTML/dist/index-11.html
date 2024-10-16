@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TailNav - Tailwind CSS Navbar Section HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Navbar" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="min-h-[75rem]">
+
+    <!-- ========== Start header ========== -->
+    <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-gray-100 shadow-md text-sm py-3">
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between lg:px-8" aria-label="Global">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <h2 class="text-2xl font-bold text-gray-950 inline-block z-20">Tail<span class="text-blue-500">Nav</span></h2>
+                </a>
+
+                <div class="lg:hidden">
+                    <button type="button" class="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                        <div class="hs-collapse-open:hidden flex-shrink-0">
+                            <i class="ti ti-baseline-density-medium text-lg"></i>
+                        </div>
+                        <div class="hs-collapse-open:block hidden flex-shrink-0">
+                            <i class="ti ti-x text-lg"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block">
+                <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between justify-start gap-6">
+                    <div class="flex lg:mx-auto flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0 lg:ps-7">
+                        <a href="#" class="text-base font-semibold text-gray-600 hover:text-gray-950 transition-all duration-500">Home</a>
+                        <a href="#" class="text-base font-semibold text-gray-600 hover:text-gray-950 transition-all duration-500">About</a>
+                        <a href="#" class="text-base font-semibold text-gray-600 hover:text-gray-950 transition-all duration-500">Projects</a>
+                        <a href="#" class="text-base font-semibold text-gray-600 hover:text-gray-950 transition-all duration-500">Resources</a>
+                        <a href="#" class="text-base font-semibold text-gray-600 hover:text-gray-950 transition-all duration-500">Contact</a>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-2">
+                        <form class="relative">
+                            <input type="text" class="form-input rounded-full border-gray-200 text-gray-800 bg-gray-50 placeholder:text-gray-800 focus:ring-0 focus:border-gray-300 ps-10 relative" placeholder="Search...">
+                            <span class="ti ti-search text-base text-gray-800 z-10 absolute start-4 top-1/2 -translate-y-1/2"></span>
+                        </form>
+
+                        <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
+                            <button id="hs-dropdown-with-header" type="button" class="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center gap-2 font-medium align-middle transition-all text-xs">
+                                <img class="inline-block h-9 w-9 rounded-full" src="assets/images/avatars/img-1.png">
+                            </button>
+
+                            <div class="hs-dropdown-menu mt-2 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[12rem] shadow-md rounded-lg p-2 border border-gray-200 bg-white">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 font-semibold rounded-md text-sm text-gray-800 transition-all hover:bg-gray-100" href="#">
+                                    My Profile</a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 font-semibold rounded-md text-sm text-gray-800 transition-all hover:bg-gray-100" href="#">
+                                    Setting</a>
+
+                                <hr class="my-2 border-gray-200 -mx-2">
+
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 font-semibold rounded-md text-sm text-red-400 hover:bg-red-400/10" href="javascript:void(0)">
+                                    Log out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== header End ========== -->
+
+    <section class="py-80 relative bg-cover bg-center" style="background-image: url('assets/images/img-2.png');">
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="container relative">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="md:text-4xl/snug text-2xl font-bold text-gray-100">Maximize your income and build lasting wealth</h2>
+                <p class="text-base font-semibold text-gray-100 mt-3">At FinFlow, We understand the importance of financial planning for individuals and businesses alike.</p>
+                <div class="pt-7 pb-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                    <a class="sm:w-auto py-0.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded-md border border-transparent text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500" href="#">Get Started<i class="ti ti-arrow-narrow-right text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+</body>
+
+</html>

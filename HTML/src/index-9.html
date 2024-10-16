@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TailNav - Tailwind CSS Navbar Section HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Navbar" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="min-h-[75rem]">
+
+    <!-- ========== Start header ========== -->
+    <header id="navbar" class="py-4 shadow-md bg-gray-800">
+        <div class="container">
+            <div class="flex items-center justify-between flex-wrap lg:flex-nowrap gap-4">
+                <div class="w-full lg:w-auto flex flex-shrink items-center justify-between">
+                    <!-- Navbar Brand Logo -->
+                    <a href="#">
+                        <h2 class="text-2xl font-bold text-white inline-block z-20">Tail<span class="text-blue-500">Nav</span></h2>
+                    </a>
+
+                    <!-- Mobile Menu Toggle Button -->
+                    <button class="hs-collapse-toggle lg:hidden inline-block w-10 h-10 rounded-md border border-gray-700" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
+                        <i class="ti ti-menu-2 text-xl text-gray-300 hover:text-gray-100"></i>
+                    </button>
+                </div>
+
+                <div class="flex-grow">
+                    <div id="mobileMenu" class="hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden lg:flex items-center justify-end mx-auto mt-2 lg:mt-0 overflow-hidden">
+                        <!-- Nevigation Menu -->
+                        <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between w-full gap-5">
+                            <div class="lg:mx-auto">
+                                <ul class="flex lg:items-center justify-center flex-col lg:flex-row gap-4">
+                                    <li class="lg:mx-2 transition-all duration-500 text-gray-50 relative group">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Home</a>
+                                        <div class="h-0.5 w-5 group-hover:bg-blue-500 lg:mx-auto transition-all duration-500"></div>
+                                    </li>
+                                    <li class="text-gray-400 lg:mx-2 transition-all duration-500 hover:text-gray-50 relative group">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">About Us</a>
+                                        <div class="h-0.5 w-9 group-hover:bg-blue-500 lg:mx-auto transition-all duration-500"></div>
+                                    </li>
+                                    <li class="text-gray-400 lg:mx-2 transition-all duration-500 hover:text-gray-50 relative group">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Services</a>
+                                        <div class="h-0.5 w-9 group-hover:bg-blue-500 lg:mx-auto transition-all duration-500"></div>
+                                    </li>
+                                    <li class="text-gray-400 lg:mx-2 transition-all duration-500 hover:text-gray-50 relative group">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Pricing</a>
+                                        <div class="h-0.5 w-9 group-hover:bg-blue-500 lg:mx-auto transition-all duration-500"></div>
+                                    </li>
+                                    <li class="text-gray-400 lg:mx-2 transition-all duration-500 hover:text-gray-50 relative group">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Contact</a>
+                                        <div class="h-0.5 w-9 group-hover:bg-blue-500 lg:mx-auto transition-all duration-500"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-shrink flex flex-wrap items-center gap-2">
+                                <a href="#" class="py-1.5 px-6 inline-block text-balance font-semibold rounded-md text-base text-gray-50 border border-white/10 bg-white/10 hover:border-white hover:text-gray-950 hover:bg-white transition-all duration-500">Login</a>
+                                <a href="#" class="py-1.5 px-6 inline-block text-balance font-semibold rounded-md text-base text-white border border-gray-700 hover:border-gray-50 hover:text-gray-950 hover:bg-gray-50 transition-all duration-500">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== header End ========== -->
+
+    <section class="py-48">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">
+                <div>
+                    <img src="assets/images/img-1.png" class="rounded-3xl" alt="">
+                </div>
+
+                <div>
+                    <h2 class="sm:text-4xl/snug text-2xl font-bold text-gray-900">Optimize your earnings and construct enduring prosperity.</h2>
+                    <p class="text-base font-semibold text-gray-500 mt-3">At FinFlow, We understand the importance of financial planning for individuals and businesses alike.</p>
+                    <div class="pt-7 pb-8 flex flex-wrap items-center justify-start gap-2 sm:gap-3">
+                        <a class="sm:w-auto py-0.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded-md border border-transparent text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500" href="#">Get Started<i class="ti ti-arrow-narrow-right text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+</body>
+
+</html>

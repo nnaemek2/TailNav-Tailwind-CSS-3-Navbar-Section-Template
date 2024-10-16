@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TailNav - Tailwind CSS Navbar Section HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Navbar" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="min-h-[75rem]">
+
+    <!-- ========== Start header ========== -->
+    <header class="top-0 sticky mt-6 scroll-m-0 flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full text-sm">
+        <nav class="relative max-w-[85rem] w-full bg-gray-50 border border-gray-200 rounded-xl mx-2 py-3 px-4 lg:flex lg:items-center lg:justify-between lg:py-0 lg:px-6 xl:mx-auto" aria-label="Global">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <h2 class="text-2xl font-bold text-gray-950 inline-block z-20">Tail<span class="text-blue-500">Nav</span></h2>
+                </a>
+                <div class="lg:hidden">
+                    <button type="button" class="hs-collapse-toggle w-8 h-8 flex justify-center items-center text-sm font-semibold rounded-md border border-gray-200 text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                        <div class="hs-collapse-open:hidden flex-shrink-0">
+                            <i class="ti ti-baseline-density-medium text-lg"></i>
+                        </div>
+                        <div class="hs-collapse-open:block hidden flex-shrink-0">
+                            <i class="ti ti-x text-lg"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block">
+                <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between gap-6 py-4">
+                    <div class="flex lg:mx-auto flex-col gap-6 lg:gap-4 mt-5 lg:flex-row lg:items-center lg:justify-end lg:mt-0 lg:ps-7">
+                        <div class="inline-block">
+                            <a class="py-2 px-6 rounded-md border justify-between font-bold border-blue-500/30 bg-blue-50 text-blue-600" href="#">Home</a>
+                        </div>
+                        <div class="inline-block">
+                            <a class="py-2 px-6 rounded-md border font-bold text-gray-500 border-gray-50 hover:border-blue-500/30 hover:bg-blue-50 hover:text-blue-600 transition-all duration-500" href="#">About</a>
+                        </div>
+                        <div class="inline-block">
+                            <a class="py-2 px-6 rounded-md border font-bold text-gray-500 border-gray-50 hover:border-blue-500/30 hover:bg-blue-50 hover:text-blue-600 transition-all duration-500" href="#">Work</a>
+                        </div>
+                        <div class="inline-block">
+                            <a class="py-2 px-6 rounded-md border font-bold text-gray-500 border-gray-50 hover:border-blue-500/30 hover:bg-blue-50 hover:text-blue-600 transition-all duration-500" href="#">Blog</a>
+                        </div>
+                        <div class="inline-block">
+                            <a class="py-2 px-6 rounded-md border font-bold text-gray-500 border-gray-50 hover:border-blue-500/30 hover:bg-blue-50 hover:text-blue-600 transition-all duration-500" href="#">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a class="py-0.5 px-4 inline-flex items-center gap-2 rounded-md border font-bold border-blue-500/30 text-blue-600 bg-blue-50 hover:border-blue-500 hover:text-white hover:bg-blue-500 transition-all duration-500" href="#">
+                            Get Started
+                            <i class="ti ti-arrow-narrow-right text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== header End ========== -->
+
+    <section class="lg:py-48 py-20">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">
+                <div>
+                    <h2 class="text-4xl/snug font-bold text-gray-900">Maximize your income and build lasting wealth</h2>
+                    <p class="text-base font-semibold text-gray-500 mt-3">At FinFlow, We understand the importance of financial planning for individuals and businesses alike.</p>
+                    <div class="pt-7 flex flex-wrap items-center justify-start gap-2 sm:gap-3">
+                        <a class="sm:w-auto py-0.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded-md border border-transparent text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500" href="#">Get Started<i class="ti ti-arrow-narrow-right text-2xl"></i></a>
+                        <a class="sm:w-auto py-1.5 px-4 inline-flex justify-center items-center gap-2 text-base font-bold rounded-md border border-transparent text-blue-500 bg-blue-500/20 hover:text-white hover:bg-blue-600 transition-all duration-500" href="#">Learn More</a>
+                    </div>
+
+                    <div class="flex items-center -space-x-2 mt-7">
+                        <img src="assets/images/avatars/img-1.png" class="h-10 rounded-full border-2 border-white" alt="">
+                        <img src="assets/images/avatars/img-2.png" class="h-10 rounded-full border-2 border-white" alt="">
+                        <img src="assets/images/avatars/img-3.png" class="h-10 rounded-full border-2 border-white" alt="">
+                        <div class="h-10 w-10 flex items-center justify-center rounded-full bg-blue-500/20 backdrop-blur-md">
+                            <h2 class="text-sm font-bold text-blue-500">82+</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/images/img-1.png" class="rounded-3xl" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+</body>
+
+</html>

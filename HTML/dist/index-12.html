@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TailNav - Tailwind CSS Navbar Section HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Navbar" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="min-h-[75rem]">
+
+    <!-- ========== Start header ========== -->
+    <header class="sticky top-0 py-4 shadow-md bg-gray-100">
+        <div class="container">
+            <div class="flex items-center justify-between flex-wrap lg:flex-nowrap lg:gap-4">
+                <div class="w-full lg:w-auto flex flex-shrink items-center justify-between">
+                    <!-- Navbar Brand Logo -->
+                    <a href="#">
+                        <h2 class="text-2xl font-bold text-gray-950 inline-block z-20">Tail<span class="text-blue-500">Nav</span></h2>
+                    </a>
+
+                    <!-- Mobile Menu Toggle Button -->
+                    <button class="hs-collapse-toggle lg:hidden inline-block" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
+                        <i class="ti ti-menu-2 text-xl text-gray-500 hover:text-gray-600"></i>
+                    </button>
+                </div>
+
+                <div class="flex-grow">
+                    <div id="mobileMenu" class="hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden lg:flex items-center justify-end mx-auto mt-2 lg:mt-0 overflow-hidden">
+                        <!-- Nevigation Menu -->
+                        <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between w-full gap-5">
+                            <div class="lg:mx-auto">
+                                <ul class="flex lg:items-center justify-center flex-col lg:flex-row lg:gap-10 gap-2">
+                                    <li class="text-base font-semibold text-gray-700 hover:text-blue-500 transition-all duration-500">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Home</a>
+                                    </li>
+                                    <li class="text-base font-semibold text-gray-700 hover:text-blue-500 transition-all duration-500">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">About Us</a>
+                                    </li>
+                                    <li class="text-base font-semibold text-gray-700 hover:text-blue-500 transition-all duration-500">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Services</a>
+                                    </li>
+                                    <li class="text-base font-semibold text-gray-700 hover:text-blue-500 transition-all duration-500">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Pricing</a>
+                                    </li>
+                                    <li class="text-base font-semibold text-gray-700 hover:text-blue-500 transition-all duration-500">
+                                        <a class="inline-flex items-center text-sm lg:text-base font-medium" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-shrink flex lg:flex-row flex-col lg:items-center gap-2">
+                                <a href="#" class="py-1.5 px-6 inline-block text-balance font-semibold rounded-md text-base text-gray-50 border border-gray-700 bg-gray-700 hover:border-gray-950 hover:text-gray-50 hover:bg-gray-950 transition-all duration-500">Login</a>
+                                <a href="#" class="py-1.5 px-6 inline-block text-balance font-semibold rounded-md text-base text-gray-900 border border-gray-700 hover:border-gray-950 hover:text-gray-50 hover:bg-gray-950 transition-all duration-500">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== header End ========== -->
+
+    <section class="lg:py-48 py-20">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">
+                <div>
+                    <img src="assets/images/img-1.png" class="rounded-3xl" alt="">
+                </div>
+
+                <div>
+                    <h2 class="text-4xl/snug font-bold text-gray-900">Maximize your income and build lasting wealth</h2>
+                    <p class="text-base font-semibold text-gray-500 mt-3">At FinFlow, We understand the importance of financial planning for individuals and businesses alike.</p>
+                    <div class="pt-7 flex flex-wrap items-center justify-start gap-6">
+                        <a class="sm:w-auto py-0.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded border border-transparent text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500" href="#">Get Started<i class="ti ti-arrow-narrow-right text-2xl"></i></a>
+
+                        <div class="flex items-center -space-x-2">
+                            <img src="assets/images/avatars/img-1.png" class="h-11 rounded-full border-2 border-white" alt="">
+                            <img src="assets/images/avatars/img-2.png" class="h-11 rounded-full border-2 border-white" alt="">
+                            <img src="assets/images/avatars/img-3.png" class="h-11 rounded-full border-2 border-white" alt="">
+                            <div class="h-11 w-11 flex items-center justify-center rounded-full border-2 border-white bg-blue-500/20 backdrop-blur-md">
+                                <h2 class="text-sm font-bold text-blue-500">82+</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+</body>
+
+</html>

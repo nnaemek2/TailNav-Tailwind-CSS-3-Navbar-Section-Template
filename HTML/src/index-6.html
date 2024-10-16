@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TailNav - Tailwind CSS Navbar Section HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Navbar" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="min-h-[75rem]">
+
+    <!-- ========== Start header ========== -->
+    <header class="top-0 sticky mt-6 scroll-m-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
+        <nav class="relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-lg mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto" aria-label="Global">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <h2 class="text-2xl font-bold text-gray-950 inline-block z-20">Tail<span class="text-blue-500">Nav</span></h2>
+                </a>
+
+                <div class="md:hidden">
+                    <button type="button" class="hs-collapse-toggle w-8 h-8 flex justify-center items-center text-sm font-semibold rounded-md border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                        <div class="hs-collapse-open:hidden flex-shrink-0">
+                            <i class="ti ti-baseline-density-medium text-lg"></i>
+                        </div>
+                        <div class="hs-collapse-open:block hidden flex-shrink-0">
+                            <i class="ti ti-x text-lg"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-5 sm:justify-between">
+                    <div class="flex flex-col sm:mx-auto gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-center md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+                        <a class="text-base font-medium text-gray-950 md:py-6" href="#" aria-current="page">Home</a>
+                        <a class="text-base font-medium text-gray-500 hover:text-gray-400 md:py-6" href="#">About</a>
+                        <a class="text-base font-medium text-gray-500 hover:text-gray-400 md:py-6" href="#">Work</a>
+                        <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
+                            <button type="button" class="flex items-center w-full text-gray-500 hover:text-gray-400 text-base font-medium">
+                                Blog
+                                <i class="ti ti-chevron-down text-lg"></i>
+                            </button>
+
+                            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-white md:shadow-md rounded-lg p-2 before:absolute top-full md:border before:-top-5 before:start-0 before:w-full before:h-5">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                    Blog list
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                    Blog grid
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100" href="#">
+                                    Blog details
+                                </a>
+                            </div>
+                        </div>
+                        <a class="text-base font-medium text-gray-500 hover:text-gray-400 md:py-6" href="#">content Us</a>
+                    </div>
+
+                    <div>
+                        <form class="relative">
+                            <input type="text" class="rounded-md border-gray-200 text-gray-950 placeholder:text-gray-950 focus:ring-0 focus:border-gray-300 ps-8 relative" placeholder="Search...">
+                            <span class="ti ti-search text-base text-gray-950 z-10 absolute start-2 top-1/2 -translate-y-1/2"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== header End ========== -->
+
+    <section class="lg:py-48 py-20">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">
+                <div>
+                    <img src="assets/images/img-1.png" class="rounded-2xl" alt="">
+                </div>
+
+                <div>
+                    <h2 class="text-4xl/snug font-bold text-gray-900">Maximize your income and build lasting wealth</h2>
+                    <p class="text-base font-semibold text-gray-500 mt-3">At FinFlow, We understand the importance of financial planning for individuals and businesses alike.</p>
+                    <div class="pt-7 flex flex-wrap items-center justify-start gap-2 sm:gap-3">
+                        <a class="sm:w-auto py-0.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded border border-transparent text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500" href="#">Get Started<i class="ti ti-arrow-narrow-right text-2xl"></i></a>
+                    </div>
+                    <div class="flex items-center -space-x-2 mt-7">
+                        <img src="assets/images/avatars/img-1.png" class="h-11 rounded-full border-2 border-white" alt="">
+                        <img src="assets/images/avatars/img-2.png" class="h-11 rounded-full border-2 border-white" alt="">
+                        <div class="h-11 w-11 flex items-center justify-center rounded-full border-2 border-white bg-blue-500/20 backdrop-blur-md">
+                            <h2 class="text-sm font-bold text-blue-500">82+</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+</body>
+
+</html>

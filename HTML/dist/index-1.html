@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TailNav - Tailwind CSS Navbar Section HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive section which can be used to Navbar" name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- Style css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="min-h-[75rem]">
+
+    <!-- ========== Start header ========== -->
+    <header class="flex top-0 sticky flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-gray-800 text-sm py-3 lg:py-0">
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between lg:px-6">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <h2 class="text-2xl font-bold text-white inline-block z-20">Tail<span class="text-blue-500">Nav</span></h2>
+                </a>
+                <div class="lg:hidden">
+                    <button type="button" class="hs-collapse-toggle w-9 h-9 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-white/20 text-white/80 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                        <div class="hs-collapse-open:hidden flex-shrink-0">
+                            <i class="ti ti-baseline-density-medium text-lg"></i>
+                        </div>
+                        <div class="hs-collapse-open:block hidden flex-shrink-0">
+                            <i class="ti ti-x text-lg"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                    <div class="flex lg:mx-auto flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:items-center lg:justify-end lg:gap-y-0 lg:gap-x-7 lg:mt-0 lg:ps-7">
+                        <a class="text-base font-medium text-white lg:py-6" href="#">Home</a>
+                        <a class="text-base font-medium text-white/70 transition-all duration-500 hover:text-white lg:py-6" href="#">About Us</a>
+                        <a class="text-base font-medium text-white/70 transition-all duration-500 hover:text-white lg:py-6" href="#">Testimonial</a>
+                        <div class="hs-dropdown [--strategy:static] lg:[--strategy:fixed] [--adaptive:none] lg:[--trigger:hover] lg:py-4">
+                            <button type="button" class="flex items-center gap-2 w-full text-white/70 transition-all duration-500 hover:text-white text-base font-medium">
+                                Blog
+                                <i class="ti ti-chevron-down text-lg"></i>
+                            </button>
+
+                            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] lg:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 lg:w-48 hidden z-10 bg-gray-800 border border-gray-700 inline-block lg:shadow-md rounded-lg p-2 before:absolute top-full lg:border before:-top-5 before:start-0 before:w-full before:h-5">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-100  hover:bg-gray-50/10" href="#">
+                                    Blog list
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-100  hover:bg-gray-50/10" href="#">
+                                    Blog grid
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-100  hover:bg-gray-50/10" href="#">
+                                    blog Details
+                                </a>
+                            </div>
+                        </div>
+                        <a class="text-base font-medium text-white/70 transition-all duration-500 hover:text-white lg:py-6" href="#">content Us</a>
+                    </div>
+
+                    <div>
+                        <a class="px-6 py-1.5 inline-flex items-center justify-center gap-2 text-base font-medium rounded-md border border-white/20 text-white/70 hover:border-white/10 hover:text-white hover:bg-white/5 transition-all duration-500" href="#">
+                            <i class="ti ti-user text-xl"></i>
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== header End ========== -->
+
+    <section class="lg:py-52 py-20">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-4xl/snug font-bold text-gray-900">Maximize your income and build lasting wealth</h2>
+                    <p class="text-base font-semibold text-gray-500 mt-3">At FinFlow, We understand the importance of financial planning for individuals and businesses alike.</p>
+                    <div class="pt-7 pb-8 flex flex-wrap sm:flex-nowrap items-center justify-start gap-2 sm:gap-3">
+                        <a class="sm:w-auto py-0.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-semibold rounded-md border border-transparent text-white bg-blue-500 hover:bg-blue-600 transition-all duration-500" href="#">Get Started<i class="ti ti-arrow-narrow-right text-2xl"></i></a>
+                        <a class="sm:w-auto py-1.5 px-4 inline-flex justify-center items-center gap-2 text-base font-bold rounded-md border border-transparent text-blue-500 bg-blue-500/20 hover:text-white hover:bg-blue-600 transition-all duration-500" href="#">Learn More</a>
+                    </div>
+                    <hr class="w-72">
+                    <div class="py-6 flex items-center gap-4">
+                        <h2 class="text-4xl font-bold">50M+</h2>
+                        <div>
+                            <p class="text-base font-semibold text-gray-500">Active users</p>
+                            <p class="text-base font-semibold text-gray-500">Around the world</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/images/img-1.png" class="rounded-2xl" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preline UI Js -->
+    <script src="assets/libs/preline/preline.js"></script>
+
+</body>
+
+</html>
